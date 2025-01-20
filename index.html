@@ -3,94 +3,649 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
+    <title>Promise Bam || Home</title>
+    <!-- font-awesome -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
     />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./images/promise-Logo.jpg" class="nav-logo" alt="nav logo" />
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav-links -->
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- nav-links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <!-- social icons -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.x.com/shadow_1909" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.t.me/MightyP_19" class="social-icon">
+              <i class="fab fa-telegram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+    <!-- header -->
+    <header class="hero">
+      <div class="section-center hero-center">
+        <article class="hero-info">
+          <div class="underline"></div>
+          <h1>i'm Promise</h1>
+          <h4>freelance web & mobile UI/UX Designer</h4>
+          <a href="contact.html" class="btn hero-btn">hire me</a>
+          <!-- social icons -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.x.com/shadow_1909" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.t.me/MightyP_19" class="social-icon">
+              <i class="fab fa-telegram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        </article>
+        <article class="hero-img">
+          <img src="./images/lasisi-elenu.jpg" class="hero-photo" alt="john doe" />
+        </article>
+      </div>
+    </header>
+    <!-- end of header -->
+    <!-- about -->
+    <section class="section about">
+      <div class="section-center about-center">
+        <!-- about img -->
+        <article class="about-img">
+          <img
+            src="./images/about-img.jpeg"
+            class="hero-photo"
+            alt="about img"
+          />
+        </article>
+        <!-- about info -->
+        <article class="about-info">
+          <!-- section title -->
+          <div class="section-title about-title">
+            <h2>about</h2>
+            <div class="underline"></div>
+          </div>
+          <!--end of section title -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae,
+            eum maiores est enim earum fugiat aspernatur. Fuga qui iste amet
+            reiciendis possimus rerum omnis recusandae molestias error
+            consequuntur, doloribus inventore reprehenderit officiis. Dolore
+            aut, repellendus eius fugiat numquam cumque.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae,
+            eum maiores est enim earum fugiat aspernatur. Fuga qui iste amet
+            reiciendis possimus rerum omnis recusandae molestias error
+            consequuntur, doloribus inventore reprehenderit officiis. Dolore
+            aut, repellendus eius fugiat numquam cumque.
+          </p>
+          <a href="about.html" class="btn">about me</a>
+        </article>
+      </div>
+    </section>
+    <!-- end of about -->
+    <!-- services -->
+    <section class="section bg-grey">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>services</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="services-center section-center">
+        <!-- single service -->
+        <article class="service">
+          <i class="fas fa-code service-icon"></i>
+          <h4>web development</h4>
+          <div class="underline"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            corrupti animi saepe quasi excepturi cupiditate voluptate dolor sed
+            obcaecati vero.
+          </p>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <i class="fab fa-sketch service-icon"></i>
+          <h4>web design</h4>
+          <div class="underline"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            corrupti animi saepe quasi excepturi cupiditate voluptate dolor sed
+            obcaecati vero.
+          </p>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <i class="fab fa-android service-icon"></i>
+          <h4>app design</h4>
+          <div class="underline"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            corrupti animi saepe quasi excepturi cupiditate voluptate dolor sed
+            obcaecati vero.
+          </p>
+        </article>
+        <!-- end of single service -->
+      </div>
+    </section>
+    <!-- end of services -->
+    <!-- projects -->
+    <section class="section projects">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>latest works</h2>
+        <div class="underline"></div>
+        <p class="projects-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          repudiandae cupiditate ea facilis incidunt, non sapiente! Debitis
+          magnam, earum assumenda obcaecati cum quaerat facere ratione molestiae
+          dignissimos aliquid blanditiis architecto voluptates delectus
+          voluptate animi nulla! Autem explicabo perspiciatis officia ea.
+        </p>
+      </div>
+      <!--end of section title -->
+      <div class="section-center projects-center">
+        <!-- single project -->
+        <a href="projects.html" class="project-1">
+          <article class="project">
+            <img
+              src="./images/project-1.jpeg"
+              alt="single project"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>project title</h4>
+              <p>client name</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project -->
+        <!-- single project -->
+        <a href="projects.html" class="project-2">
+          <article class="project">
+            <img
+              src="./images/project-2.jpeg"
+              alt="single project"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>project title</h4>
+              <p>client name</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project --><!-- single project -->
+        <a href="projects.html" class="project-3">
+          <article class="project">
+            <img
+              src="./images/project-3.jpeg"
+              alt="single project"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>project title</h4>
+              <p>client name</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project --><!-- single project -->
+        <a href="projects.html" class="project-4">
+          <article class="project">
+            <img
+              src="./images/project-4.jpeg"
+              alt="single project"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>project title</h4>
+              <p>client name</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project -->
+      </div>
+    </section>
+    <!-- end of projects -->
+    <!-- connect -->
+    <section class="connect">
+      <video
+        controls
+        autoplay
+        muted
+        loop
+        class="video-container"
+        poster="./images/project-1.jpeg"
       >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
+        <source src="./videos/connect.mp4" type="video/mp4" />
+        Sorry, your browser does not support embedded videos
+      </video>
+      <div class="video-banner">
+        <!-- section title -->
+        <div class="section-title">
+          <h2>let's get in touch</h2>
+          <div class="underline"></div>
+        </div>
+        <!--end of section title -->
+        <p class="video-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione
+          perferendis exercitationem sit. Beatae eius commodi officiis rem
+          soluta ratione dignissimos quisquam tempore laudantium, porro vitae
+          cupiditate dicta magni quas corrupti aperiam, rerum minus odio totam
+          repellendus delectus nostrum veniam!
+        </p>
+        <a href="contact.html" class="btn">contact me</a>
+      </div>
+    </section>
+    <!-- end of connect -->
+    <!-- skills -->
+    <section class="section skills">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>skills</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center skills-center">
+        <article>
+          <h3>front end</h3>
+          <!-- single skill -->
+          <div class="skill">
+            <p>HTML/CSS</p>
+            <div class="skill-container">
+              <div class="skill-value"></div>
+              <p class="skill-text">
+                50%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+          <!-- single skill -->
+          <div class="skill">
+            <p>Javascript</p>
+            <div class="skill-container">
+              <div class="skill-value value-70"></div>
+              <p class="skill-text skill-text-70">
+                70%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+          <!-- single skill -->
+          <div class="skill">
+            <p>React</p>
+            <div class="skill-container">
+              <div class="skill-value value-80"></div>
+              <p class="skill-text skill-text-80">
+                80%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+        </article>
+        <article>
+          <h3>back end</h3>
+          <!-- single skill -->
+          <div class="skill">
+            <p>Node</p>
+            <div class="skill-container">
+              <div class="skill-value"></div>
+              <p class="skill-text">
+                50%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+          <!-- single skill -->
+          <div class="skill">
+            <p>PHP</p>
+            <div class="skill-container">
+              <div class="skill-value value-70"></div>
+              <p class="skill-text skill-text-70">
+                70%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+          <!-- single skill -->
+          <div class="skill">
+            <p>Python</p>
+            <div class="skill-container">
+              <div class="skill-value value-80"></div>
+              <p class="skill-text skill-text-80">
+                80%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+        </article>
+      </div>
+    </section>
+    <!-- end of skills -->
+    <!-- timeline -->
+    <section class="section timeline">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>timeline</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center timeline-center">
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2025</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span class="number">
+            1
+          </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2024</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span class="number">
+            2
+          </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2023</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span class="number">
+            3
+          </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2022</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span class="number">
+            4
+          </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2021</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span class="number">
+            5
+          </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>2020</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span class="number">
+            6
+          </span>
+        </article>
+        <!-- end of  single timeline item -->
+      </div>
+    </section>
+    <!--end of  timeline -->
+    <!-- blog -->
+    <section class="section blog">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>blog</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center blog-center">
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/project-1.jpeg" alt="" />
+            <div class="card-info">
+              <h4>article title</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                nisi ut a est eum tempora dolorum temporibus voluptatibus!
+                Natus, provident.
+              </p>
+              <div class="card-footer">
+                <img src="./images/lasisi-elenu.jpg" alt="author image" />
+                <p>7 min read</p>
+              </div>
+            </div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">read more</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/project-2.jpeg" alt="" />
+            <div class="card-info">
+              <h4>article title</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                nisi ut a est eum tempora dolorum temporibus voluptatibus!
+                Natus, provident.
+              </p>
+              <div class="card-footer">
+                <img src="./images/lasisi-elenu.jpg" alt="author image" />
+                <p>7 min read</p>
+              </div>
+            </div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">read more</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/project-3.jpeg" alt="" />
+            <div class="card-info">
+              <h4>article title</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                nisi ut a est eum tempora dolorum temporibus voluptatibus!
+                Natus, provident.
+              </p>
+              <div class="card-footer">
+                <img src="./images/lasisi-elenu.jpg" alt="author image" />
+                <p>7 min read</p>
+              </div>
+            </div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">read more</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/project-4.jpeg" alt="" />
+            <div class="card-info">
+              <h4>article title</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                nisi ut a est eum tempora dolorum temporibus voluptatibus!
+                Natus, provident.
+              </p>
+              <div class="card-footer">
+                <img src="./images/lasisi-elenu.jpg" alt="author image" />
+                <p>7 min read</p>
+              </div>
+            </div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">read more</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+      </div>
+    </section>
+    <!--end of  blog -->
+    <!-- footer -->
+    <footer class="footer">
+      <!-- social icons -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.x.com/shadow_1909" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.t.me/MightyP_19" class="social-icon">
+              <i class="fab fa-telegram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+
+      <p>&copy; <span id="date"></span> Promise Bam. all rights reserved</p>
+    </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>
