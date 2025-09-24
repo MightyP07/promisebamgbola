@@ -307,6 +307,7 @@ Navbar
 
 /* Individual links */
 .sidebar-links a {
+  display: block;
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--clr-grey-1); /* light text for dark sidebar */
